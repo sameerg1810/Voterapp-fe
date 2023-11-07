@@ -22,7 +22,7 @@ function Allforms() {
   const fetchUserData = async () => {
     try {
       const response = await axios.get(
-        `https://voterapp-backend.onrender.com//form/${localStorage.getItem(
+        `https://voterapp-backend.onrender.com/form/${localStorage.getItem(
           "id"
         )}`
       );
