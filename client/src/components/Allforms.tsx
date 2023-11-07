@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import backgroundImage from "./AmithNadda.jpg";
 
 interface User {
   _id: string;
@@ -31,7 +32,16 @@ const Allforms = () => {
   }, []);
 
   return (
-    <div className="container" style={{ marginTop: "50px" }}>
+    <div
+      className="container"
+      style={{
+        marginTop: "50px",
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <Link
         to="/admin/page"
         className="btn btn-primary"
